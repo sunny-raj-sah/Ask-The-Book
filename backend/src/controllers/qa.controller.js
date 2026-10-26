@@ -35,6 +35,21 @@ req.headers["x-api-key"];
     // 2️⃣ Find top 5 relevant chunks
     const relevantChunks = searchVectors(questionEmbedding, 5);
 
+
+    // 3. Debug the retrieved context
+    console.log("\n========== RAG DEBUG ==========");
+    console.log("Question:", question);
+    console.log("Retrieved chunks:", relevantChunks.length);
+
+    relevantChunks.forEach((chunk, index) => {
+      console.log(`\n--- Chunk ${index + 1} ---`);
+      console.log("Metadata:", chunk.metadata);
+      console.log("Text:", chunk.metadata?.text);
+    });
+
+    console.log("\n==============================\n");
+
+    
     // 3️⃣ Build prompt for AI
     const contextText = relevantChunks
       .map((c, idx) => `Chunk ${idx + 1}: ${c.metadata.text}`)

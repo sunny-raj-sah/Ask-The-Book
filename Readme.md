@@ -1,4 +1,4 @@
-# 📚 AI-Powered RAG System for Grounded PDF Question Answering
+# 📚 Ask The Book
 
 An AI-powered document question-answering system that uses **Retrieval-Augmented Generation (RAG)** to answer questions from PDF documents using retrieved document context rather than relying only on the language model's internal knowledge.
 
@@ -24,7 +24,7 @@ https://github.com/sunny-raj-sah/AI-powered-RAG-system-for-grounded-PDF-question
 
 ### Main Interface
 
-![Book Q&A Interface](./docs/screenshots/home.png)
+![Book Q&A Interface](./docs/screenshots/answer.png)
 
 ### Question Answering
 
@@ -33,7 +33,7 @@ https://github.com/sunny-raj-sah/AI-powered-RAG-system-for-grounded-PDF-question
 
 ### Grounded Response
 
-![Grounded Response](./docs/screenshots/answer.png)
+![Grounded Response](./docs/screenshots/home.png)
 
 ## 🎯 Problem
 
