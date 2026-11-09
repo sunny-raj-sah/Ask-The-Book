@@ -1100,3 +1100,54 @@ body:has(.auth-page) {
     width: 100%;
   }
 }
+
+.auth-form .input-group {
+  display: flex;
+  width: 100%;
+}
+
+.auth-form .input-group input {
+  flex: 1;
+  min-width: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.auth-form .input-group .btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+
+.password-toggle-btn {
+  background: #171b2b;
+  color: #aeb8cc;
+  border: 1px solid #343b50;
+  border-left: none;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.password-toggle-btn i {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.password-toggle-btn:hover {
+  background: #22283a;
+  color: #ffffff;
+}
+
+.password-toggle-btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.password-toggle-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
